@@ -1,0 +1,62 @@
+<div class="container">
+
+<button class="btn btn-info" (click)="addProject()">New project</button>
+<button class="btn btn-info"(click)="addTask()">New task</button>
+  <button class="btn btn-info"(click)="addUser()">New user</button>
+  <button class="btn btn-success"(click)="addFilter()">Filter</button>
+  <form *ngIf=isProject>
+    <h2>New project</h2>
+<div class="form-group">
+<h3>Code</h3>
+  <input type="text" id="code" placeholder="input code" class="form-control"><br>
+  <h3>Summary</h3>
+  <input type="text" id="summary" placeholder="input summary" class="form-control"><br>
+  <br>
+  <button type="button" class="btn btn-info">Add</button>
+</div>
+  </form>
+  <form *ngIf=isTask>
+    <h2>New task</h2>
+    <div class="form-group">
+      <h3>Project code</h3>
+      <input type="text" id="projectCode" placeholder="input code" class="form-control"><br>
+      <h3>Description</h3>
+      <input type="text" id="description" placeholder="input description" class="form-control"><br>
+      <h3>Priority</h3>
+      <input type="text" id="priority" placeholder="input priority" class="form-control"><br>
+      <h3>Due data</h3>
+      <input type="text" id="dueData" placeholder="input due data" class="form-control"><br>
+      <h3>Estimation</h3>
+      <input type="text" id="estimation" placeholder="input estimation" class="form-control"><br>
+      <h3>Assignee</h3>
+      <input type="text" id="assignee" placeholder="input assignee" class="form-control"><br>
+      <br>
+      <button type="button" class="btn btn-info">Add</button>
+    </div>
+  </form>
+  <form *ngIf=isUser>
+    <h2>New user</h2>
+    <div class="form-group">
+      <h3>Personal data</h3>
+      <input type="text" id="personalData" placeholder="input data" class="form-control"><br>
+      <h3>User role</h3>
+      <input type="" id="userRole"  class="form-control"><br>
+      <br>
+      <button type="button" class="btn btn-info">Add</button>
+    </div>
+  </form>
+  <table>
+  <tr>
+    <th>Project code</th>
+    <th>Task</th>
+    <th>Priority</th>
+    <th>Status</th>
+    <th>Created</th>
+    <th>Updated</th>
+    <th>Due data</th>
+    <th>Estimation</th>
+    <th>Description</th>
+    <th>Action</th>
+  </tr>
+  </table>
+</div>
