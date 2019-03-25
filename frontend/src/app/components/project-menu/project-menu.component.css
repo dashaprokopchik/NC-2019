@@ -1,0 +1,33 @@
+h3{
+  color:white;
+  margin-left: 30px;
+}
+button{
+  margin-right: 5%;
+  margin-top: 20px;
+}
+h4{
+  color:white;
+  margin-left: 30px;
+}
+p{
+  color:white;
+  margin-left: 30px;
+}
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+.right-info{
+  margin-left: auto;
+  margin-right: 20px;
+}
+.left-info{
+  margin-right: auto;
+  margin-left: 20px;
+}
+.textInfo{
+  margin-left: 20px;
+}
+

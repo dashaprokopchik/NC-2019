@@ -1,0 +1,59 @@
+<h3>Project</h3>
+<div class="container">
+  <button class="btn btn-info" (click)="Editt()">Edit</button>
+  <button class="btn btn-info"(click)="Assign()">Assignee</button>
+  <button class="btn btn-success"(click)="Start()">Start</button>
+  <button class="btn btn-info"(click)="Resolve()">Resolve</button>
+  <button class="btn btn-info"(click)="ReadyForTest()">Ready for test</button>
+  <button class="btn btn-info"(click)="Reopen()">Reopen</button>
+  <button class="btn btn-danger"(click)="Close()">Close</button>
+</div>
+<br>
+<h4>Details</h4>
+<div class="flex-container">
+  <div class="left-info">
+  <p><b>Priority:</b>
+    <!--<input type="radio" name="blocker" value="blocker">blocker<Br>-->
+    <!--<input type="radio" name="critical" value="critical">critical<Br>-->
+    <!--<input type="radio" name="major" value="major">major<Br>-->
+    <!--<input type="radio" name="normal" value="normal">normal<Br>-->
+    <!--<input type="radio" name="minor" value="minor">minor<Br>-->
+    <input type="text" name="priority">
+  </p>
+  <p><b>Status:</b>
+    <input type="text" name="status">
+  </p>
+  <p>Description:<Br>
+    <textarea name="description" cols="40" rows="3"></textarea></p>
+  </div>
+  <div class="right-info">
+    <p><b>Assignee:</b>
+      <input type="text" name="assignee">
+    </p>
+    <p><b>Reporter:</b>
+      <input type="text" name="reporter">
+    </p>
+    <p><b>Estimation:</b>
+      <input type="text" name="estimation">
+    </p>
+    <p><b>Created:</b>
+      <input type="text" name="created">
+    </p>
+    <p><b>Updated:</b>
+      <input type="text" name="updated">
+    </p>
+    <p><b>Resolved:</b>
+      <input type="text" name="resolved">
+    </p>
+    <p><b>Closed:</b>
+      <input type="text" name="closed">
+    </p>
+  </div>
+</div>
+<div class="textInfo">
+<p>Attachments:<Br>
+  <textarea name="attachment" cols="100" rows="5"></textarea></p>
+<p>Comments:<Br>
+  <textarea name="comments" cols="100" rows="5"></textarea></p>
+<p><input class ="button-add" type="submit" value="Add comment"></p>
+</div>

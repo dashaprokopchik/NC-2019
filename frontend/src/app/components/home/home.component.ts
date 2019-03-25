@@ -20,12 +20,18 @@ export class HomeComponent implements OnInit {
   }
   addProject(){
 this.isProject=!this.isProject;
+if (this.isUser=true) {this.isUser=false;}
+if (this.isTask=true) {this.isTask=false;}
   };
   addTask(){
 this.isTask=!this.isTask;
+    if (this.isUser=true) {this.isUser=false;}
+    if (this.isProject=true) {this.isProject=false;}
   };
   addUser(){
 this.isUser=!this.isUser;
+    if (this.isProject=true) {this.isProject=false;}
+    if (this.isTask=true) {this.isTask=false;}
   };
   addFilter(){
 

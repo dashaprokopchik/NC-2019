@@ -1,10 +1,9 @@
 <div class="container">
-
-<button class="btn btn-info" (click)="addProject()">New project</button>
+  <button class="btn btn-info" (click)="addProject()">New project</button>
 <button class="btn btn-info"(click)="addTask()">New task</button>
   <button class="btn btn-info"(click)="addUser()">New user</button>
   <button class="btn btn-success"(click)="addFilter()">Filter</button>
-  <form *ngIf=isProject>
+  <form class="addInfo"  *ngIf=isProject>
     <h2>New project</h2>
 <div class="form-group">
 <h3>Code</h3>
@@ -15,7 +14,7 @@
   <button type="button" class="btn btn-info">Add</button>
 </div>
   </form>
-  <form *ngIf=isTask>
+  <form class="addInfo" *ngIf=isTask>
     <h2>New task</h2>
     <div class="form-group">
       <h3>Project code</h3>
@@ -34,7 +33,7 @@
       <button type="button" class="btn btn-info">Add</button>
     </div>
   </form>
-  <form *ngIf=isUser>
+  <form class="addInfo" *ngIf=isUser>
     <h2>New user</h2>
     <div class="form-group">
       <h3>Personal data</h3>
@@ -45,7 +44,9 @@
       <button type="button" class="btn btn-info">Add</button>
     </div>
   </form>
-  <table>
+<br>
+  <div class="table">
+<table class="table-info">
   <tr>
     <th>Project code</th>
     <th>Task</th>
@@ -58,5 +59,42 @@
     <th>Description</th>
     <th>Action</th>
   </tr>
-  </table>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</table>
+  </div>
 </div>

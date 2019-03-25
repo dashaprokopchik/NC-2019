@@ -6,15 +6,18 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import {RouterModule,Routes} from "@angular/router";
+import { ProjectMenuComponent } from './components/project-menu/project-menu.component';
 
 const appRoutes: Routes=[{path:'',component:HomeComponent},
-  {path:'registration',component:RegistrationComponent}
+  {path:'registration',component:RegistrationComponent},
+  {path:'projectChange',component:ProjectMenuComponent}
 ]
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    ProjectMenuComponent
   ],
   imports: [
     BrowserModule,
